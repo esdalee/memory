@@ -2,10 +2,10 @@
 
 ## Purpose:
 
-This game will test the user's memory skills to only click the same image once!
+This game tests user's memory skills to only click an image once. No repeats!
 
 ## Instructions: 
-Click an image only one time, if you "accidentally" click the same picture twice, the score will reset!
+Click an image only one time, if you "accidentally" click the same picture twice, the score will reset.
 
 ## DEMO: 
 
