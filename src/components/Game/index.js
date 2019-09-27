@@ -51,6 +51,7 @@ handleClick = id => {
     });
 }
 
+// Reset Game
 isOver = () => {
     // Reset states
     this.setState({
@@ -61,8 +62,6 @@ isOver = () => {
     this.setCards(this.state.images);
 }
 
-
-
 render() {
     return(
         <div>
@@ -70,11 +69,18 @@ render() {
                 currentScore={this.state.currentScore}
                 highScore={this.state.highScore}
                 response={this.state.response} />
-
+            <div>
+                {this.state.images.map(picInfo => (
+                <Pic
+                    id={picInfo.id}
+                    image={picInfo.image}
+                    name={picInfo.name}
+                    handleClick={this.handleClick} />
+                ))}
+            </div>
         </div>
     )
 }
-
 }
 
 export default Game;

@@ -3,11 +3,13 @@ import "./style.css";
 
 function ScoreBoard(props) {
     return (
-        <nav className="navbar navbar-dark bg-dark d-flex justify-content-center">
-            <span className="navbar-brand mb-0 h1 eb-title-font">Eat the Sushi</span>
-            <div className="text-white d-flex justify-content-end">
-                <h3>Current Score: {props.score}</h3>
-                <h3>High Score: {props.highScore}</h3>
+        <nav className="navbar navbar-dark bg-dark d-flex justify-content-between">
+            <h1 className="text-white">Eat the Sushi</h1><br></br>
+            <div className="text-white justify-content-center">
+                <ul>
+                <h5>Current Score: {props.currentScore}</h5>
+                <h5>High Score: {props.highScore}</h5>
+                </ul>
             </div>
         </nav>
     )
